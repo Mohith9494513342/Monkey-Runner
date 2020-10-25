@@ -101,7 +101,7 @@ console.log(gameState);
 if(gameState === PLAY){
     
     if(monkey.isTouching( FoodGroup)){
-       FoodGroup.visible=false;
+       FoodGroup.destroyEach();
        }
     ground.velocityX = -(4 + 3* score/100)
     //scoring
